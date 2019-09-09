@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_title">14sp</dimen>
+
+    <dimen name="main_icon_text">13sp</dimen>
+
+    <dimen name="main_li_title">14sp</dimen>
+    <dimen name="main_li_describe">11sp</dimen>
+
+    <dimen name="main_my_plan">16sp</dimen>
+    <dimen name="main_my_plan_all">12sp</dimen>
+
+    <dimen name="main_make_plan_d">13sp</dimen>
+    <dimen name="main_make_plan_r">22sp</dimen>
+
+    <dimen name="main_li_d">9dp</dimen>
+
+</resources>

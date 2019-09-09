@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/backicon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@mipmap/fanhui"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp" />
+
+        <TextView
+            android:id="@+id/toolbar_tv_left_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_marginLeft="12dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/t_title"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/toolbar_tv_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/t_title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@null"
+            android:visibility="gone"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/t_title"
+            android:textSize="13sp"
+             />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/v_title_d"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/d_rule" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/buttons_ll"
+        android:id="@+id/ll_cj">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/distance" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测距" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttons_ll"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/distance" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测距" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_table_distance"
+    android:visibility="invisible"
+    style="@style/bottom_tab_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bottom_table_modelname"
+        style="@style/bottom_tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="距离测量" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/bottom_tab_value_group"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/bottom_table_distance_value"
+            style="@style/bottom_tab_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00" />
+
+        <TextView
+            android:id="@+id/bottom_tab_value_d"
+            style="@style/bottom_tab_value_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="米" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        style="@style/bottom_tab_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/bottom_tab_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="清除" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+        <TextView
+            android:id="@+id/bottom_tab_exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="退出" />
+    </LinearLayout>
+</LinearLayout>

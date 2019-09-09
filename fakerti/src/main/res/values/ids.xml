@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fg_state" type="id"/>
+    <item name="ac_state" type="id"/>
+</resources>
