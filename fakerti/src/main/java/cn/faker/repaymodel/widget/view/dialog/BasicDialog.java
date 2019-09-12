@@ -52,7 +52,7 @@ public abstract class BasicDialog extends DialogFragment implements BasicDialogV
     @Override
     public void onResume() {
         super.onResume();
-        getDialog().getWindow().setLayout(-1,-2 );
+//        getDialog().getWindow().setLayout(-1,-2 );
     }
 
     @Override
@@ -75,13 +75,13 @@ public abstract class BasicDialog extends DialogFragment implements BasicDialogV
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-/*        WindowManager.LayoutParams attributes = getDialog().getWindow().getAttributes();
-//        attributes.height = getDialogHeght();
-//        attributes.width = getDialogWidth();
-        attributes.height = (25 * ScreenUtil.getWindowHeight(getContext()) / 32);//获取屏幕的宽度，定义自己的宽度
-        attributes.width = (8 * ScreenUtil.getWindowWidth(getContext()) / 9);
+        WindowManager.LayoutParams attributes = getDialog().getWindow().getAttributes();
+        attributes.height = getDialogHeght();
+        attributes.width = getDialogWidth();
+//        attributes.height = (25 * ScreenUtil.getWindowHeight(getContext()) / 32);//获取屏幕的宽度，定义自己的宽度
+//        attributes.width = (8 * ScreenUtil.getWindowWidth(getContext()) / 9);
         initLayoutParams(attributes);
-        getDialog().getWindow().setAttributes(attributes);*/
+        getDialog().getWindow().setAttributes(attributes);
     }
 
     @Deprecated

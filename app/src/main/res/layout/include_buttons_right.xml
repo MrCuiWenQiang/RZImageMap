@@ -1,13 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_alignParentRight="true"
+    android:layout_below="@id/ll_bus"
     android:layout_marginRight="8dp"
     android:orientation="vertical">
 
-    <LinearLayout style="@style/buttons_ll"
-        android:id="@+id/ll_cj">
+    <LinearLayout
+        android:id="@+id/ll_cj"
+        style="@style/opens_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gn" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基本" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/open_fd"
+        style="@style/opens_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fd" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="放大" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/open_sx"
+        style="@style/opens_ll"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sx" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩小" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/open_xz"
+        style="@style/opens_ll"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xz" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/right_ll_distance"
+        style="@style/opens_ll">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -21,18 +90,20 @@
             android:text="测距" />
     </LinearLayout>
 
-    <LinearLayout style="@style/buttons_ll"
-        android:visibility="gone">
+    <LinearLayout
+        android:id="@+id/right_ll_area"
+        style="@style/opens_ll">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/distance" />
+            android:src="@mipmap/area" />
 
         <TextView
             style="@style/buttons_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="测距" />
+            android:text="面积" />
     </LinearLayout>
+
 </LinearLayout>

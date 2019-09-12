@@ -15,9 +15,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
         </com.esri.arcgisruntime.mapping.view.MapView>
+        <!--<include layout="@layout/include_buttons_bottom"/>-->
         <include layout="@layout/include_buttons_right"/>
         <include layout="@layout/include_bottom_tab"/>
     </RelativeLayout>
 
     <include layout="@layout/include_right_util"/>
+
 </android.support.v4.widget.DrawerLayout>

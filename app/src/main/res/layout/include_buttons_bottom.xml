@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_bus"
+    android:layout_alignParentLeft="true"
+    android:layout_marginRight="8dp"
+    android:orientation="horizontal">
+
+    <LinearLayout style="@style/opens_ll"
+        android:id="@+id/open_fd"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fd" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="放大" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/opens_ll"
+        android:id="@+id/open_sx"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sx" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩小" />
+    </LinearLayout>   
+    <LinearLayout style="@style/opens_ll"
+        android:id="@+id/open_xz"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xz" />
+
+        <TextView
+            style="@style/buttons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/right_ll_distance"
+            style="@style/opens_ll">
+
+            <ImageView
+                android:src="@mipmap/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测距" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_ll_area"
+            style="@style/opens_ll">
+
+            <ImageView
+                android:src="@mipmap/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="面积" />
+        </LinearLayout>
+
+</LinearLayout>

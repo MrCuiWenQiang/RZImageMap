@@ -8,13 +8,13 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_marginTop="12dp"
+        style="@style/right_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/right_ll_distance"
+            android:id="@+id/right_ll_marker"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -22,18 +22,150 @@
             android:orientation="vertical">
 
             <ImageView
-                android:src="@mipmap/distance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:src="@mipmap/d"
+                style="@style/item_image" />
 
             <TextView
+                style="@style/item_image_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="测距" />
+                android:text="画点" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/right_ll_area"
+            android:id="@+id/right_ll_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/x"
+                style="@style/item_image" />
+
+            <TextView
+                style="@style/item_image_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画线" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/right_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/right_ll_mian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/area"
+                style="@style/item_image" />
+
+            <TextView
+                style="@style/item_image_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画面" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_ll_rou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/y"
+                style="@style/item_image"/>
+
+            <TextView
+                style="@style/item_image_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画圆" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/right_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/right_ll_tuya"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/ty"
+                style="@style/item_image" />
+
+            <TextView
+                style="@style/item_image_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="涂鸦" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_ll_clean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/clone"
+                style="@style/item_image"/>
+
+            <TextView
+                style="@style/item_image_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/right_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/right_ll_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/dc"
+                style="@style/item_image"/>
+
+            <TextView
+                style="@style/item_image_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导出" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -46,9 +178,10 @@
                 android:layout_height="wrap_content" />
 
             <TextView
+                style="@style/item_image_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="面积" />
+                android:text="清除" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
